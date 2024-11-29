@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Portfolio = () => {
@@ -185,6 +185,14 @@ const Portfolio = () => {
                                     <title>X</title>
                                     <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                                 </svg>
+                            </Button>
+                            <Button
+                                variant="outline"
+                                size="icon"
+                                className="text-black hover:bg-gray-300 border-gray-700"
+                                onClick={() => openLink("./vinod_web_dev.pdf")}
+                            >
+                                <FileText />
                             </Button>
                         </div>
                     </CardContent>
